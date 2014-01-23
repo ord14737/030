@@ -1,3 +1,8 @@
+********************************************************************
+ÉCHÉANCE: Envoyer votre à samibouchebaba@gmail.com AVANT 23h59 Le 24 Janvier 2014.
+Nommer le fichier: votrenom_votre#_exo6.html
+********************************************************************
+
 Créer une page HTML 
 	- avec un titre principal: Exercice Cours 6
 	- avec un titre secondaire: Votre nom 
@@ -16,3 +21,5 @@ Pour chaque rangée:
 	- 3e colonne: Les dimensions en pixel (longueur x largeur) de l'image original.	
 
 Pour cet exercice, utiliser les entités HTML (&[][];) pour afficher les caractères spéciaux, notamment les voyelles avec accents. NE PAS déclarer votre charset sur la balise meta dans votre en-tête
+
+
