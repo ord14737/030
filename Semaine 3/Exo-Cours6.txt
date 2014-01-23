@@ -2,7 +2,6 @@
 ÉCHÉANCE: Envoyer votre à samibouchebaba@gmail.com AVANT 23h59 Le 24 Janvier 2014.
 Nommer le fichier: votrenom_votre#_exo6.html
 ********************************************************************
-
 Créer une page HTML 
 	- avec un titre principal: Exercice Cours 6
 	- avec un titre secondaire: Votre nom 
@@ -11,16 +10,16 @@ Créer une page HTML
 Créer un tableau
 	- 3 colonnes et 6 rangées
 	- Les en-têtes de votre tableau seront les suivants: Image, Description et Dimensions
+	- Pour chaque en-tête, appliquer un arrière-plan (background) jaune;
 
 Pour chaque rangée:
 	- 1e colonne: 
 		-insérer une image de votre choix
+		-spécifier la longueur (width="300")
 		-L'image devrait être un hyperlien vers l'image original
 
 	- 2e colonne: brève description de cette image 	
 	- 3e colonne: Les dimensions en pixel (longueur x largeur) de l'image original.	
 
-Pour cet exercice, utiliser les entités HTML (&[][];) pour afficher les caractères spéciaux, notamment
-les voyelles avec accents. NE PAS déclarer votre charset sur la balise meta dans votre en-tête
-
-
+Pour cet exercice, utiliser les entités HTML (&[][];) pour afficher les caractères spéciaux, 
+notamment les voyelles avec accents. NE PAS déclarer votre charset sur la balise meta dans votre en-tête
