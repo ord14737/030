@@ -20,6 +20,7 @@ Pour chaque rangée:
 	- 2e colonne: brève description de cette image 	
 	- 3e colonne: Les dimensions en pixel (longueur x largeur) de l'image original.	
 
-Pour cet exercice, utiliser les entités HTML (&[][];) pour afficher les caractères spéciaux, notamment les voyelles avec accents. NE PAS déclarer votre charset sur la balise meta dans votre en-tête
+Pour cet exercice, utiliser les entités HTML (&[][];) pour afficher les caractères spéciaux, notamment
+les voyelles avec accents. NE PAS déclarer votre charset sur la balise meta dans votre en-tête
 
 
