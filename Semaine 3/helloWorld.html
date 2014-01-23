@@ -1,0 +1,115 @@
+<!-- Commentaires
+	/4123
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- DOM : Document Object Model -->
+	<title>
+		Mon premier document HTML
+	</title>	
+	<meta charset="UTF-8"/> 
+
+	<meta> </meta>
+
+	<!-- XHTML est beaucoup plus strict sur la fermeture de balise -->
+	<link rel="stylesheet" type="text/css" href="main.css"/> 
+
+	<style>
+		.nouvelleClasse{
+
+			color:yellow;
+		}
+	</style>
+	<!-- La balise link pour les feuilles de style remplacent habituellement
+	la balise style qui spécifie les règles de style de facon 'inline' -->
+	<script>
+	//inserer votre JS ici //meilleure pratique: comme les feuilles de style, la logique qui spécifie le comportement dynamique de notre page devrait être dans un fichier séparé.
+	</script>
+
+</head>
+<body class='myBody'>
+	<p class="monParagraphe">
+		Bonjour tout le monde!
+	</p>
+
+	<div class="monParagraphe">
+		<p style="float:right;">
+			Raccourci pour mettre en commentaire
+			<p>Descendant du paragraphe</p> 
+			<!-- Le paragraphe descendant va hériter le style de son parent -->
+		</p>
+	</div>
+	<div>
+		<ol>
+			<li>Sélectionner le &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           texte</li>
+			<li>Appuyer sur CTRL + / </li>
+		</ol>
+	</div>
+
+	<!-- 
+		Balises vues dans le cours 1
+		<html>
+		<head> - contient title, meta, link
+		<body>
+		<p>
+		<div>
+		<h1> à <h`x>
+		<ol> Liste numérotée
+		<ul> Liste à puces
+		<li> Item d'une liste
+		<pre> Conserve sauts de ligne, espaces, tabulations
+
+		<style> - 
+		Notez bien que votre navigateur s'attend à voir du CSS à l'intérieur de cette balise.
+		
+
+	-->
+
+	<h1>Titre le plus grand </h1>
+	<h2>Titre un peu moins grand </h2>
+	<h3>Titre beaucoup moins grand </h3>
+	<h4>Titre assez petit </h4>
+	<h5>Titre plus petit </h5>
+	<h6>Titre le plus petit </h6>
+
+	<pre>
+		Le texte contenu dans la
+		balise       		pre conserve  la   mise
+		en forme
+		des sauts de lignes, des
+		tabulations, 
+		et des espaces.
+	</pre>
+
+	<a href="http://www.google.com"> Aller à Google </a>
+
+	<div>
+			<p>
+					Esperluette : &amp; <br/>
+					Balise ouvrante : &lt; <br/>
+					Balise fermante : &gt; <br/>
+					Guillemets : &quot; <br/>
+					Apostrophe : &apos; <br/>
+
+			<!-- http://developers.whatwg.org/named-character-references.html
+
+
+					&  - 
+
+
+				-->
+			</p>
+			<!-- 
+
+			Les attributs width et height qui définissent la longueur et hauteur, respectivement, doivent absolument être spécifiés en pixels.  vous d'aller chercher les dimension de l'image, et d'appliquer la taille désirée en divisant par le rapport adéquat.  
+
+			-->
+			<img src="http://high-ti.com/wp-content/uploads/2013/10/BBM-iOS-Android-2210.jpg" title="Quand je met mon curseur sur l'image, le text en valeur de l'attribut title est affiché" width="250" height="193" alt="Cette valeur désigne le texte qui va être affiché si le navigateur ne peut pas afficher l'image" align='right'/>
+
+
+	</div>
+
+</body>
+
+</html>
