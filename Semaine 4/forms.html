@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Exo Cours 7 - Formulaires</title>
+	<meta charset="UTF-8"/>
+	<!-- Rappel: pas de déclaration charset avec la balise meta -->
+</head>
+<!--
+
+***************** OUVRIR DANS GOOGLE CHROME
+
+
+http://www.w3schools.com/tags/tag_input.asp
+
+button
+checkbox
+color
+date 
+datetime 
+datetime-local 
+email 
+file
+hidden ********* pas requis
+image
+month 
+number 
+password
+radio
+range 
+reset
+search
+submit
+tel
+text
+time 
+url
+week
+
+-->
+<body>
+<!-- Exercice Formatif Cours 8 : Pour chaque type de champ (balise input), ajouter un paragraphe, suivant le gabarit donné -->
+	<form>
+		<p>
+		<label for="champTexte">Texte</label> <input placeholder="Nom de famille" type="text" name="champTexte" autofocus/>
+		</p>
+<!-- Examen ***** TOUJOURS REPETER LE CHAMP PASSWORD DEUX FOIX -->
+		<p>
+		<label for="champCouleur">Mot de passe</label> <input type="password" name="champCouleur"/>
+		</p>
+
+		<p>
+		<label for="confirm">Confirmer</label> <input type="password" name="confirm"/>
+		</p>
+
+		<p>
+		<label for="champDate">Date</label> <input type="date" name="champDate" title="AA-MM-JJ"/>
+		</p>
+
+		<p>
+		<label for="champCouleur">Couleur</label> <input type="color" name="champCouleur"/>
+		</p>
+
+		<p>
+		<label for="checkbox">Boîte à cocher (cochée par défaut avec l'attribut checked)</label> <input checked type="checkbox" name="checkbox"/>
+		</p>
+		<p>
+		<label for="checkbox">Boîte à cocher</label> <input type="checkbox" name="checkbox"/>
+		</p>
+
+		<p>
+		<label for="gender">Homme</label><input type="radio" name="gender" value="male"><br>
+		<label for="gender">Femme</label><input type="radio" name="gender" value="female"> 
+		</p>
+
+		<p>
+		<label for="courriel">Courriel</label> <input placeholder="johnsmith@exemple.com" type="email" name="courriel"/>
+		</p>
+
+		<p>
+		<label for="monFichier">Fichier</label> <input type="file" name="monFichier"/>
+		</p> 
+
+		<p>
+		<label for="maListe">Liste de langages</label> <br/>
+		<select name="maListe">
+			<option disabled selected value="">-- Sélectionner une option --</option>
+			<optgroup label="Semestre 1">
+			<option value="html">HTML</option>
+			<option value="css">CSS</option>
+			<option value="javascript">Javascript</option>
+			<option value="objc">Objective-C</option>
+
+			</optgroup>
+
+			<optgroup label="Semestre 2">
+			<option value="python">Python</option>
+			<option value="cf">Coldfusion</option>
+			<option value="csharp">C#</option>
+			<option value="cplusplus">C++</option>
+			</optgroup>
+
+			<optgroup label="Semestre 3">
+			
+			<option value="lua">Lua</option>
+			<option value="java">Java</option>
+			<option value="assembler">Assembler</option>
+			</optgroup>
+
+		</select>
+
+
+		</p>
+
+
+
+	</form>
+</body>
+
+</html>
