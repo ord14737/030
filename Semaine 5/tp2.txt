@@ -71,6 +71,7 @@ Directives:
 	-	Centrer ces deux conteneurs par rapport au corps de la page
 	-	Ajouter une image de votre choix à chaque (bonus: +1 pt si les images sont transparentes - typiquement en png)
 	-	Sous chaque image, ajouter une description breve de l'image. 
+	-	Appliquer une longueur horizontale de 250 pixels
 
 4.	Dans votre feuille de style, créer une classe de style 'policeTp2' qui représentera notre police avec les propriétés suivantes (	consulter la documentation pour le nom des propriétés):
 		- gras et couleur du texte noire
