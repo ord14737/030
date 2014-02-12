@@ -1,13 +1,29 @@
-Un aperçu du document à reproduire: https://www.dropbox.com/s/04jdalscp849nj6/tp2.png
+ORD 14737 : Programmation Internet I
+
+Travail Pratique 2
+	-	Échéance: 20 février 2014 avant 23h59 (par courriel: samibouchebaba@gmail.com)
+	-	Ce travail vaut 3% de la note finale
+	-	À remettre: un document HTML (TP2_votrenom_votre#.html) répliquant la page en aperçu ci-dessous.
+
+Aperçu du document à reproduire: https://www.dropbox.com/s/04jdalscp849nj6/tp2.png
+
+Directives:
+	- Appliquer le style dans une feuille de style;
+	- Certains styles sont fournis; le reste est à vous de produire;
+	- Consulter la documentation pour les propriétés CSS et leurs valeurs respectives acceptées;
+	- Amusez-vous!
+
+**********************************************************************************************************************
+Étapes à suivre:
 
 0. 	Créer un document HTML utilisant l'ensemble de caractères UTF-8, dont le titre sera: Travail Pratique 2 (votre nom)
 
-0.5 Créer une feuille de style CSS styles.css et importer cette feuille dans votre document.
+0.5 Créer une feuille de style CSS 'styles.css' et importer cette feuille dans votre document.
 
 ***** IMPORTANT: Dans les étapes qui suivent, le stylage CSS doit être appliqué par l'entremise de .classes ou #id de style déclarées dans cette feuille ****
 
 1. Ajouter d'abord les classes suivantes à votre feuille de style, nécessaires à l'étape suivante:
-		.bs-callout {
+			.bs-callout {
 			  margin: 20px 0;
 			  padding: 15px 30px 15px 15px;
 			  border-left: 5px solid #eee;
