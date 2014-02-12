@@ -1,0 +1,98 @@
+Un aperçu du document à reproduire: https://www.dropbox.com/s/04jdalscp849nj6/tp2.png
+
+0. 	Créer un document HTML utilisant l'ensemble de caractères UTF-8, dont le titre sera: Travail Pratique 2 (votre nom)
+
+0.5 Créer une feuille de style CSS styles.css et importer cette feuille dans votre document.
+
+***** IMPORTANT: Dans les étapes qui suivent, le stylage CSS doit être appliqué par l'entremise de .classes ou #id de style déclarées dans cette feuille ****
+
+1. Ajouter d'abord les classes suivantes à votre feuille de style, nécessaires à l'étape suivante:
+		.bs-callout {
+			  margin: 20px 0;
+			  padding: 15px 30px 15px 15px;
+			  border-left: 5px solid #eee;
+			}
+			.bs-callout h4 {
+			  margin-top: 0;
+			}
+			.bs-callout p:last-child {
+			  margin-bottom: 0;
+			}
+			.bs-callout code,
+			.bs-callout .highlight {
+			  background-color: #fff;
+			}
+			.bs-callout-danger {
+			  background-color: #fcf2f2;
+			  border-color: #dFb5b4;
+			}
+			.bs-callout-warning {
+			  background-color: #fefbed;
+			  border-color: #f1e7bc;
+			}
+			.bs-callout-info {
+			  background-color: #f0f7fd;
+			  border-color: #d0e3f0;
+			}
+
+
+2. Au corps de la page (utiliser une classe de style)
+	- appliquer l'image d'arrière-plan suivante:
+		http://griscom.kz/wp-content/uploads/2013/12/blurry_background_iv-wallpaper-1366x768.jpg
+
+	- une fois l'image d'arrière-plan appliquée, ajouter les propriétés suivantes au corps pour flexibiliser le positionnement et l'étirement de l'image:
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover; 
+
+3.	Ajouter deux conteneurs (div) qui prendront chacun 40% (horizontalement) de la page
+
+	- 	a chacun, appliquer un flux de positionnement (display) 'inline-block'
+	-	Centrer ces deux conteneurs par rapport au corps de la page
+	-	Ajouter une image de votre choix à chaque (bonus: +1 pt si les images sont transparentes - typiquement en png)
+	-	Sous chaque image, ajouter une description breve de l'image. 
+
+4.	Dans votre feuille de style, créer une classe de style 'policeTp2' qui représentera notre police avec les propriétés suivantes (	consulter la documentation pour le nom des propriétés):
+		- gras et couleur du texte noire
+		- espacement des lettres: 1pt;
+		- espacement des mots: 2pt
+		- alignement du texte : gauche
+		- famille de police (font-family): helvetica, sans-serif
+		- line-height:1
+
+5.	Ajouter un premier div (le conteneur externe) avec les propriétés de style suivantes (appliqué une classe ou id):
+		- rayon de bordure (border-radius) avec valeur 20 pixels;
+		- un flux de positionnement (display) avec valeur inline-block;
+		- la police 'policeTp2'
+		- appliquer aussi à ce div les classes 'bs-callout' et 'bs-callout-info'
+
+		- ajouter un titre (h1) à l'intérieur de ce div : Travail Pratique 2
+
+		-	Ajouter une liste à puces dont chaque item puce est un carré (voir la propriété CSS list-style et ses valeurs acceptées)
+				- À cet élément (la liste), ajouter un rayon de bordure (border-radius) de 15 pixels;
+				- Appliquer aussi à la liste les classes 'bs-callout-warning' et 'bs-callout'
+				Ajouter le contenu suivant:
+				- Nom: (votre nom en italique)
+				- Numéro d'étudiant: (votre numéro d'étudiant en italique)
+				- Navigateur préféré: (l'image logo du navigateur, avec une longueur de 20 pixels et un hyperlien sur cet image pointant vers la page de téléchargement de ce navigateur)
+				- Ma balise préférée: (nom de la balise + hyperlien pointant vers page de documentation de cette balise dans w3schools)
+				- Liste des technologies connues : (liste d'options groupées avec trois groupes: Langages de Programmation, Systèmes d'exploitation et Autres. À vous de remplir la liste avec la liste des langages et technologies que vous connaissez)
+		
+		-	Ajouter un paragraphe sous la liste de l'étape précdédente
+			- appliquer les classes de style 'bs-callout' et 'bs-callout-danger'
+			- appliquer un rayon de bordure (border-radius) de 15 pixels
+			- Ajouter le faux-texte suivant: 
+
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+
+
+
+
+
+
+
+
