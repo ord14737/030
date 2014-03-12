@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Exercice du cours 10 - 6 fevrier. Envoyer a samibouchebaba@gmail.com -->
+<html>
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>
+			Exercice Cours 10
+		</title>
+	</head>
+	<body style="text-align:center;">
+
+	<!-- Le flux de positionnement en HTML
+
+			1. inline (en ligne): avec ce rendu, les éléments sont positionnés en série de façon horizontale
+
+				<element> <element>
+
+				ex: Texte ici <img style="display:inline;" src="sami.jpg"/>
+				Noter que insérer un element img a l'interieur d'un paragarphe de texte sans spécifier l'attribut style avec la propriété display ayant la valeur inline, forcera un saut de ligne puisque le rendu par défaut de l'element img = block;
+
+			2.  block (superposage vertical): ces éléments forcent un saut de ligne, 	réclament un espace vertical
+
+			On peut changer cette propriété en la spécifiant dans la valeur de l'attribut style de n'importe quel élément.
+	 -->
+		<div style="border:solid red 2px;width:50%;display:inline-block;min-height:300px">
+			
+		</div>
+
+		<div style="border:solid purple 2px;width:40%;display:inline-block;min-height:300px">
+			
+		</div>
+
+		<p style="border:solid blue 2px">
+			Ceci est un paragraphe avec une image. 
+			<img style="display:block;border:solid green 2px" src="http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="100" />
+		</p>
+
+		<!-- La balise <pre> permet de conserver les espaces, les tabulations et les sauts de ligne, qui sont autrement ignorés par l'interpréteur ou navigateur -->
+		<pre style="background-color:yellow;">
+		Voici la balise pre!
+			Ce paragraphe a quelques                                   espaces de trop.
+			Voici du texte avec un excès
+			de
+			sauts
+			de
+			lignes
+		</pre>
+		<div>
+		<small>
+			Voici le texte vu ci-haut SANS être contenu dans une balise <xmp>pre</xmp></small>
+		Voici la balise pre!
+			Ce paragraphe a quelques                                   espaces de trop.
+			Voici du texte avec un excès
+			de
+			sauts
+			de
+			lignes
+		</div>
+
+		<h2> Voici une liste non ordonnée </h2>
+		<ul>
+		</ul>
+
+		<ol>
+		</ol>
+
+
+	</body>
+
+</html>

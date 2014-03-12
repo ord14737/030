@@ -1,0 +1,54 @@
+	/*
+		Les commentaires en CSS ont leur propre convention, même s'il est
+		inclu dans l'entête HTML head
+	*/
+
+.myBody{
+		color:blue;
+	}
+
+	.monParagraphe{
+		text-align:right;
+	}
+
+body{
+
+
+}
+
+h1{
+
+	color:red;
+}
+
+h2{
+	color:green;
+
+}
+
+#laCite {
+
+	float:right;
+	margin-right:10px;
+	margin-bottom:10px;
+	border:solid black 1px;
+	padding:2px
+}
+
+.nouvelleClasse {
+
+	float:left;
+	border:dotted red 3px;
+
+}
+
+/*
+
+Sélecteurs CSS
+. (point, sert à sélectionner une classe)
+
+aucun (insérer une balise et le style défini sera appliqué sur toutes les balises du document)
+
+# (sélectionner un élément UNIQUE, défini par vous). Le ID doit être unique à travers le document.
+
+*/

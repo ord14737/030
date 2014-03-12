@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semaine 7 - Audio et video</title>
+	<meta charset="UTF-8">
+
+	<style>
+		/*Propriétés CSS en ligne*/
+
+	</style>
+
+	<script>
+		//Voici un commentaire en javascript
+		function play(){
+			//Créer une variable qui représente ma balise audio
+			var baliseAudio;
+			baliseAudio = document.getElementById('audio1');
+			baliseAudio.play();
+		}
+	</script>
+	
+</head>
+<body>
+
+	<h1> HTML5 Audio </h1>
+
+	<p> Voici une chanson </p>
+
+	<audio id="audio1">
+		<source src="maChanson.mp3" type="audio/mpeg">
+		<!-- <source src="maChanson.m4a" type="audio/x-aac"> -->
+		<p> Votre navigateur n'est pas compatible avec la balise audio </p> 
+		<!-- Le texte de ce paragraphe est affiché si et seulement si le fichier spécifié dans la source ne peut pas être chargé -->
+	</audio>
+
+	<form>
+		<input type="button" value="Play" onClick="play()"/>
+	</form>
+
+	<h1> HTML5 Video </h1>
+
+	<p> Voici une video </p>
+
+	<video id="video" controls>
+		<source src="video.m4v" type="video/mp4">
+		<p> Votre navigateur n'est pas compatible avec la balise video </p> 
+		<!-- Le texte de ce paragraphe est affiché si et seulement si le fichier spécifié dans la source ne peut pas être chargé -->
+	</video>
+
+</body>
+
+</html>

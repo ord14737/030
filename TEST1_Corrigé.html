@@ -1,0 +1,149 @@
+<!-- 
+Reproduire	le	formulaire	logé	dans	le	tableau	ci-dessous.		N’oubliez	pas	d’assigner	des	noms	à	chaque	
+propriété	saisie	par	le	formulaire	et	des	valeurs	par	défaut	au	cas	échéant	(paires	nom-valeurs).		Le	
+recouvrement	des	colonnes	et	rangées	doit	être	identique	(rowspan	et	colspan).	Votre	tableau	doit	contenir	un	
+en-tête	et	un	corps.	Le	corps	contient	le	formulaire.
+ -->
+ <!DOCTYPE html>
+ <html>
+ 	<head>
+ 			<title>Test 1 - Partie 2 - Sami Bouchebaba</title>
+
+ 			<style>
+
+ 				body{
+
+ 					border: solid black 2px;
+ 					padding: 150px 150px 150px 150px;
+ 					font-family:Helvetica, sans-serif;
+
+ 				}
+
+ 				a{
+ 					color:green;
+ 				}
+
+ 			</style>
+ 			<!-- La différence générale entre src et href ***************************
+
+				Href crée une RÉFÉRENCE à une ressource externe, et il N,est pas nécessaire pour le navigateur de charger/afficher le contenu à l'addresse ciblée.
+
+				HREF = cible
+				SRC = source
+ 			 -->
+ 			<link href="style_test1_samib.css" type="text/css" rel="stylesheet">
+
+
+ 	</head>
+
+ 	<body>
+ 		<!-- Ici, c'est le contenu de la balise ou l'élément image qui est REMPLACÉ par le contenu de la ressource dont l'emplacement est spécifié en valeur -->
+ 		<!-- <img src="monimage.png">
+
+ 		<a href="www.sami.com"></a> -->
+ 		<!-- Ici, encore, le fichier Javascript est incorporé dans le document -->
+ 		<!--<script src="monfichier.js"></script>-->
+
+ 		<form>
+ 		<!-- C'est a l'interieur de ce formulaire qu'il faut structurer le tableau. Son contenu sera des champs de saisie et du texte -->
+
+ 			<table border="0">
+ 				<thead>
+ 					<th colspan="3">Sami Bouchebaba - profil d'examen</th>
+ 				</thead>
+ 				<tbody>
+		 			<tr>
+		 				<td rowspan="2">Noms</td>
+		 				<td>Prenom:</td>
+		 				<td><input type="text" name="prenom" required placeholder="Entrez votre prenom"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Nom de famille:</td>
+		 				<td><input type="text" name="nomDeF" required placeholder="Entrez votre nom de famille"/></td>	
+		 			</tr>
+		 			<tr>
+		 				<td rowspan="5">Informations personnelles</td>
+		 				<td>Addresse</td>
+		 				<td><input type="text" name="address" placeholder="Entrez votre addresse"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Numero de telephone</td>
+		 				<td><input type="tel" name="phone" placeholder="Entrez votre # tel"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>SIN#</td>
+		 				<td><input required type="number" name="sin" placeholder="Entrez votre # SIN"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Date de naissance:</td>
+		 				<td><input type="date" name="dateDeNaissance" placeholder="Entrez votre date de naissance"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Sexe:</td>
+		 				<td>
+		 					<input type="radio" name="gender" value="male"/>&nbsp;Male 
+		 					<input type="radio" name="gender" value="female"/>&nbsp;Female
+		 					<!-- NOTATION JSON : rappel pour les paires noms valeurs -->
+		 					<!-- dateDeNaissance = camelcase = chameauscule -->
+			 					<!-- envoye au serveur c'est l'objet:
+ 									{
+									prenom : " <remplacer par ce qui est entre par l'utisateur> ", 
+									
+ 									gender : "male",
+ 									sin : " <remplacer par ce qui est entre par l'utisateur> ",
+ 									dateDeNaissance : " <remplacer par ce qui est entre par l'utisateur> "
+
+ 									(et ainsi de suite...)
+
+ 									}
+	
+									
+		 					 -->
+
+		 				</td>
+		 			</tr>
+		 			<tr>
+		 			<!-- le recouvrement par defaut est de 1 -->
+		 				<td>Curriculum vitae</td>
+		 				<td>Televerser votre CV en PDF</td>
+		 				<td><input type="file" name="monCV"/></td>
+		 			</tr>
+		 			<tr>
+		 				<td rowspan="3">Autres</td>
+		 				<td>Couleur preferee</td>
+		 				<td><input type="color" name="couleurPref"/></td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Droitier ou gaucher</td>
+		 				<td>
+		 					<select name="dextrie">
+		 						<option value="gaucher">Gaucher</option>
+		 						<option value="droitier">Droitier</option>
+		 					</select>
+
+		 				</td>
+		 			</tr>
+		 			<tr>
+		 				
+		 				<td>Infos supplementaires</td>
+		 				<td><textarea rows="3" cols="50"></textarea></td>
+		 			</tr>
+	 			</tbody>
+
+ 			</table>
+
+
+ 		</form>
+ 		<!-- Lesson du Cours 14 - ne fait pas partie du corrigé -->
+ 		<script src="Cours14.js" type="text/javascript">
+ 		</script>
+
+ 	</body>
+
+ </html>

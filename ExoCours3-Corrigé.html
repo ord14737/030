@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			Exo Cours 3 - Corrigé
+		</title>
+		<!-- 
+
+			Ajouter vos feuiles de style ici, le cas échéant 
+			OU ajouter balise <style>
+		-->
+		
+		<!-- En CSS, il y a plusieurs facons de faire référence soit à une classe d'éléments, une balise ou un élément unique dans notre document 
+			
+			
+
+		-->
+
+
+		<style>
+		/*
+		1. Classe de style: ajouter l'attribut 'class' à n'importe quel élément. Spécifier le nom de cette classe (un nom de votre choix)
+
+			ex:	<p class="titre">
+
+				Cette classe 'titre' va être déclarée dans ma feuille de style (ou balise <style>) avec certaines propriétés qui seront appliquées à l'élément en question
+
+				.titre
+				****************************************
+				Le point (.) en CSS désigne une classe.
+				.nomDeVotreClasseDeStyle{
+					
+					propriété: valeur;
+
+				}
+				Consulter la documentation CSS pour valeurs acceptées.
+				****************************************
+		*/
+		.titre{
+				float:right;
+				border:solid blue 1px;
+				background-color: purple;
+				color: yellow;
+			}
+			/*
+				2. Le dièse (#) désigne un élément unique dans le document. La connexion est faite par l'attribut id="titrePrincipal". L'attribut id peut être appliqué sur n'importe quelle balise.
+			*/
+			#titrePrincipal{
+
+				border: dotted green 4px;
+				float:center;
+
+			}
+
+			
+			/*
+			3. On peut aussi appliquer un style à l'ensemble de toutes les balises du même type. Par exemple, ici, toute autre ligne horizontale ajoutée héritera ce style de largeur 50%.
+			*/
+			hr
+			{
+				width:50%;
+			}
+
+			p{
+				border:dotted red 2px;
+			}
+
+			
+
+			
+		</style>
+	</head>
+
+	<body>
+
+		<p class="titre">
+			Ce paragraphe a l'attribut class=&quot;titre&quot;
+		</p>
+		<!-- **** L'attribut id doit absolument être unique à travers le document. Donc il ne peut pas y avoir un autre élément avec la valeur id "titrePrincipal" -->
+		<h1 id="titrePrincipal">Exo Cours 3</h1>
+
+		<h2 class="">Corrigé</h2>
+
+		
+
+		<!-- <p>, <mark>, <strong>, <samp>, <dfn>, <em>,
+			<dl>-<dt>, <sup>, <sub>
+		 -->
+
+		 <!-- Balise <p> -->
+
+		 <p class="titre">
+		 	<p class="titre">
+		 		Cette balise crée un paragraphe
+		 	</p>
+		 	<p>Voici une autre paragraphe</p>
+		 	<!-- 
+				 L'attribut target ayant une valeur de "_blank" ouvre un nouvel onglet lorsque l'hyperlien est cliqué. L'ensemble de valeurs acceptées par l'attribut target (<a>)
+
+				 	_blank
+					_parent
+					_self
+					_top
+					framename 
+				 -->
+		 	<a target="_blank" href="http://www.w3schools.com/tags/tag_p.asp">Documentation pour cette balise</a>
+		 </p>
+		 <hr/>
+		 <p>
+		 	<p>Cette balise met le texte en gras</p>
+		 	<p><strong>Ce texte utilise la balise strong</strong></p>
+		 	<a target="_blank" href="http://www.w3schools.com/tags/tag_strong.asp">Documentation pour cette balise</a>
+		 </p>
+
+		 <hr/>
+		 <p>
+		 	<p>Cette balise met le texte en italique</p>
+		 	<p><em>Ce texte utilise la balise em</em></p>
+		 	<a target="_blank" href="http://www.w3schools.com/tags/tag_em.asp">Documentation pour cette balise</a>
+		 </p>
+
+
+	</body>
+
+</html>
