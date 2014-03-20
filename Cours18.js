@@ -58,7 +58,7 @@ console.log('Avant suppression' + JSON.stringify(nouveauTableau));
 
 //array.splice(index,howmany,item1,.....,itemX)
 var indexDeD = nouveauTableau.indexOf('D');
-nouveauTableau.splice(indexDeD,1);.
+nouveauTableau.splice(indexDeD,1);
 
 
 
@@ -95,6 +95,9 @@ delete nouvelObjet.prop2; //SUPPRESSION d'une propriété d'objet
 	Une façon explicite de supprimer non un objet (interdit), mais une PROPRIÉTÉ de cet objet, c'est en utilisant le mot-clé delete 
 
 */
+
+var x = document.getElementById('buddy');
+console.log('Body '+x.innerHTML);
 
 
 
