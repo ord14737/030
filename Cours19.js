@@ -90,8 +90,8 @@ Cet évènement se produit lorsque le formulaire est envoyé. Il est particuliè
 
 Pour rappel, l'envoi d'un formulaire en HTML se fait par un clic sur un élément input de type submit :
 
-1<input type="submit" value="Envoyer" />
-Comme je vous l'ai dit, il est possible de bloquer l'envoi d'un formulaire, et ce, de cette manière :
+<input type="submit" value="Envoyer" />
+Il est possible de bloquer l'envoi d'un formulaire, et ce, de cette manière :
 
 1<form method="post" action="page.php" onsubmit="return x;">
 Si x vaut true, le formulaire est envoyé normalement.
@@ -100,24 +100,35 @@ En revanche, si x vaut false, alors le formulaire n'est pas envoyé (il ne se pa
 
 On va donc créer une fonction, nommée verifier dans l'exemple qui suit, qui va vérifier le contenu du formulaire, pour éventuellement en bloquer l'envoi.
 
-1<form method="post" action="page.php" onsubmit="return verifier(this);">
-2     <!-- ici, le contenu du formulaire -->
-3     <input type="submit" value="Envoyer" />
-4</form>
+<form method="post" action="page.php" onsubmit="return verifier(this);">
+     <!-- ici, le contenu du formulaire -->
+     <input type="submit" value="Envoyer" />
+</form>
 Et notre fonction ressemblera schématiquement à ceci :
-
-1function verifier(f) {
-2     if( /* le formulaire est bien rempli */ )
-3          return true;
-4     else
-5     {
-6          alert('Le formulaire est mal rempli');
-7          return false;
-8     }
-9}
-
-
 */
+function verifier(f) {
+     if( /* le formulaire est bien rempli */ )
+          return true;
+     else
+     {
+          alert('Le formulaire est mal rempli');
+          return false;
+     }
+}
 
+
+/*
+	onReset
+		onReset
+
+Le second évènement typique des formulaires se nomme onReset, et est appelé lorsque le formulaire est remis à zéro par un bouton de type reset.
+
+OnReset s'utilise assez facilement, de manière semblable à onSubmit. Voyez plutôt:
+
+<form method="post" action="page.php" onreset="return confirm('Vraiment ?');">
+Dans ce cas, si l'utilisateur veut réinitialiser le formulaire, il devra le confirmer. Si il confirme son action, true est renvoyé, et le formulaire est alors réinitialisé ; s'il annule, c'est false qui est retourné, et rien ne se passe.
+
+Notez qu'on peut bien sûr exploiter à la fois onSubmit et onReset pour un même formulaire.
+*/
 
 
