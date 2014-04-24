@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html>
@@ -95,7 +94,7 @@ while($notreAddresse = $reponse->fetch())
         Province: <strong><?php echo $notreAddresse['province']; ?></strong>  <br/>
         Country: <strong><?php echo $notreAddresse['country']; ?></strong>  <br/>
     </p>
-^}{}
+
 <?php
 }
 
